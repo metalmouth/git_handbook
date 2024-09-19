@@ -75,9 +75,20 @@ $ git log --oneline
 ```
 ---
 
-Выполнить unstage изменений — git restore --staged <file>
-«Откатить» коммит — git reset --hard <commit hash>
-«Откатить» изменения, которые не попали ни в staging, ни в коммит, — git restore <file>
+Выполнить unstage изменений  
+```bash 
+git restore --staged <file>
+```
+
+«Откатить» коммит
+``bash 
+git reset --hard <commit hash>
+```
+
+«Откатить» изменения, которые не попали ни в staging, ни в коммит
+``bash
+git restore <file>
+```
 
 ---
 
