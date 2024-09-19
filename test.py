@@ -1,3 +1,3 @@
 def s(a, b):
     return a*a, b*b
-print(s(5, 8))
+print(s(5, 11))
