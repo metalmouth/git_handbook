@@ -74,9 +74,11 @@ $ git log --oneline
 # коммит в истории всё ещё один (но у него новый хеш) 
 ```
 ---
+
 Выполнить unstage изменений — git restore --staged <file>
 «Откатить» коммит — git reset --hard <commit hash>
 «Откатить» изменения, которые не попали ни в staging, ни в коммит, — git restore <file>
+
 ---
 
 [ссылка на курс](https://practicum.yandex.ru/git-basics/?from=catalog)
