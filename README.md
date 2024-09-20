@@ -93,4 +93,57 @@ git restore <file>
 
 ---
 
+### Посмотреть изменения
+Команда git diff сравнит последнюю закоммиченную версию файла с той, что находится в состоянии modified.
+Команда git diff --staged покажет изменения в staged-файлах относительно последних закоммиченных версий.
+git diff a9928ab 11bada1 покажет различия коммитов с хешами a9928ab и 11bada1.
+---
+
+### .gitignore
+
+```bash
+.DS_Store
+ 
+# игнорировать все файлы, которые заканчиваются на .jpeg
+*.jpeg
+
+# игнорировать все файлы "tmp" во всех подпапках папки docs
+docs/*/tmp
+
+# ? - один любой символ
+file?.txt
+
+# игнорировать файлы file0.txt, file1.txt и file2.txt
+# при этом не игнорировать file3.txt, file4.txt, ...
+file[0-2].txt
+
+# игнорировать todo.txt в корне репозитория
+/todo.txt
+
+# для сравнения: spam.txt будет игнорироваться во всех папках
+spam.txt
+
+# игнорировать папку build
+build/
+
+# игнорировать файлы "docs/current/tmp", "docs/old/tmp",
+# а также "docs/old/saved/a/b/c/d/tmp"
+# и даже "docs/tmp", потому что ноль вложенных папок тоже подходит
+docs/**/tmp
+
+# игнорировать только "docs/current/tmp" и "docs/old/tmp"
+# файл "docs/old/saved/a/b/c/d/tmp" не попадает в правило
+docs/*/tmp
+
+# игнорировать все JPEG-файлы
+*.jpeg
+
+# но только не мем с Doge
+!doge.jpeg 
+```
+Показать игнорируемые файлы
+```bash
+git status --ignored
+```
+
 [ссылка на курс](https://practicum.yandex.ru/git-basics/?from=catalog)
