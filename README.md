@@ -160,5 +160,5 @@ docs/*/tmp
 ```bash
 git status --ignored
 ```
-[учебник по vim](https://ru.wikibooks.org/wiki/Vim)
+[учебник по vim](https://ru.wikibooks.org/wiki/Vim)  
 [ссылка на курс](https://practicum.yandex.ru/git-basics/?from=catalog)
