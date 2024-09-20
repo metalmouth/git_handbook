@@ -173,10 +173,48 @@ git clone
 
 # Ветки в Git 
 
-Чтобы создать ветку, необходимо выполнить команду `git branch %BRANCH_NAME%`.
+Чтобы создать ветку, необходимо выполнить команду 
+```bash
+git branch %BRANCH_NAME%
+```
 
-Для перехода в ветку есть команда `git checkout %BRANCH_NAME%`. 
+Для перехода в ветку есть команда 
+```bash
+git checkout %BRANCH_NAME%
+``` 
 
+```bash
+git diff HEAD~2 HEAD 
+```
+— покажи разницу между тем коммитом, который был два коммита назад, и текущим.
 
+```bash
+git branch -d br-name 
+```
+— удали ветку br-name, но только если она является частью main;
+
+```bash
+git branch -D br-name 
+```
+— удали ветку br-name, даже если она не объединена с main.
+
+```bash
+git merge main 
+```
+ — объедини ветку main с текущей активной веткой.
+
+```bash
+git push -u origin my-branch
+```
+ — отправь новую ветку my-branch в удалённый репозиторий и свяжи локальную ветку с удалённой, чтобы при дополнительных коммитах можно было писать просто git push без -u;
+```bash
+git push my-branch
+```
+ — отправь дополнительные изменения в ветку my-branch, которая уже существует в удалённом репозитории;
+```bash git pull
+```
+ — подтяни изменения текущей ветки из удалённого репозитория.
+
+---
 [учебник по vim](https://ru.wikibooks.org/wiki/Vim)  
 [ссылка на курс](https://practicum.yandex.ru/git-basics/?from=catalog)
