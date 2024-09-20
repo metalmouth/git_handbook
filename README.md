@@ -160,5 +160,14 @@ docs/*/tmp
 ```bash
 git status --ignored
 ```
+
+---
+
+Команда 
+```bash
+git clone
+``` копирует проект на локальный компьютер.
+
+Она автоматически связывает локальный репозиторий с удалённым.
 [учебник по vim](https://ru.wikibooks.org/wiki/Vim)  
 [ссылка на курс](https://practicum.yandex.ru/git-basics/?from=catalog)
